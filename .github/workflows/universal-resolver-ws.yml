@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - 'drivers/btcr/*
+      - 'drivers/btcr/*'
 
 jobs:
   build:

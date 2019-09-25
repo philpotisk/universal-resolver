@@ -1,5 +1,5 @@
 ![DIF Logo](https://raw.githubusercontent.com/decentralized-identity/decentralized-identity.github.io/master/images/logo-small.png)
-TEST DEPLOY
+
 # Universal Resolver Driver: did:btcr
 
 This is a [Universal Resolver](https://github.com/decentralized-identity/universal-resolver/) driver for **did:btcr** identifiers.
