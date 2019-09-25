@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: driver-did-btc
+  name: driver-did-btcr
   labels:
-    app: driver-did-btc
+    app: driver-did-btcr
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: driver-did-btc
+      app: driver-did-btcr
   template:
     metadata:
       labels:
-        app: driver-did-btc
+        app: driver-did-btcr
     spec:
       containers:
-      - name: driver-did-btc
-        image: phil21/driver-did-btc:latest
+      - name: driver-did-btcr
+        image: phil21/driver-did-btcr:latest
         ports:
         - containerPort: 8080

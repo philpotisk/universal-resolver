@@ -13,9 +13,10 @@ cd ${DRIVER_PATH}
 
 if [ -z "${IS_DEPLOYED}" ]
 then
-   echo "Create cluster..."
+   echo "Creating cluster..."
    sh -c "kubectl create -f deployment-${DRIVER_NAME}.yml"
+   sh -c "kubectl create -f nodeport-${DRIVER_NAME}.yml"
 else
-   echo "Update cluster ..."
+   echo "Updating cluster ..."
    sh -c "kubectl rollout restart -f deployment-${DRIVER_NAME}.yml"
 fi
