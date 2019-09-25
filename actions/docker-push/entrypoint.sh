@@ -15,7 +15,7 @@ fi
 
 ls -al
 
-docker build . -t ${CONTAINER_TAG}
+docker build -f ./docker/Dockerfile -t ${CONTAINER_TAG}
 
 docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}
 
