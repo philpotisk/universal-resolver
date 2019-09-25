@@ -1,10 +1,10 @@
 #!/bin/sh -l
 
-sh -c "echo DOCKER BUILD AND PUSH"
+echo "DOCKER BUILD AND PUSH"
 
-sh -c "pwd"
+echo "path ${pwd}"
 
-pwd
+ls -al
 
 if [ -n "${BUILD_PATH}" ]
 then
