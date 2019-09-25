@@ -1,6 +1,11 @@
 name: CI/CD Workflow for Universal Resolver
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'drivers/btcr/*
 
 jobs:
   build:
@@ -15,4 +20,4 @@ jobs:
         DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
         CONTAINER_TAG: phil21/driver-did-btc:latest
-        BUILD_PATH: ./universal-resolver/drivers/btcr
+        BUILD_PATH: ./drivers/btcr
