@@ -1,5 +1,5 @@
 #!/bin/bash
-FROM docker:stable-slim
+FROM docker:stable
 
 LABEL "name"="Docker build/push Action"
 LABEL "maintainer"="Phil <philipp.potisk@danubetech.com>"
