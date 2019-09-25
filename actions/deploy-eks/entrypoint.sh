@@ -9,14 +9,16 @@ export KUBECONFIG=/tmp/config
 
 IS_DEPLOYED=$(kubectl get deployments |grep ${DRIVER_NAME})
 
+echo ${DRIVER_PATH}
 cd ${DRIVER_PATH}
+ls -al
 
 if [ -z "${IS_DEPLOYED}" ]
 then
-   echo "Creating cluster..."
-   sh -c "kubectl create -f deployment-${DRIVER_NAME}.yml"
-   sh -c "kubectl create -f nodeport-${DRIVER_NAME}.yml"
+   echo "Creating cluster (deployment-${DRIVER_NAME}.yml) ..."
+   #sh -c "kubectl create -f deployment-${DRIVER_NAME}.yml"
+   #sh -c "kubectl create -f nodeport-${DRIVER_NAME}.yml"
 else
    echo "Updating cluster ..."
-   sh -c "kubectl rollout restart -f deployment-${DRIVER_NAME}.yml"
+   #sh -c "kubectl rollout restart -f deployment-${DRIVER_NAME}.yml"
 fi
