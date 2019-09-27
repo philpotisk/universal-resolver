@@ -23,8 +23,8 @@ jobs:
     - name: Update EKS
       uses: ./actions/deploy-eks
       env:
-        DRIVER_PATH: ./drivers/btcr
-        DRIVER_NAME: driver-did-btcr
+        CONTAINER_PATH: ./drivers/btcr
+        CONTAINER_NAME: driver-did-btcr
         KUBE_CONFIG_DATA: ${{secrets.KUBE_CONFIG_DATA}}
         AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
         AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}

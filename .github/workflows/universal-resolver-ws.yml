@@ -20,3 +20,11 @@ jobs:
         DOCKER_FILE: docker/Dockerfile-uni-resolver-web
         CONTAINER_TAG: phil21/uni-resolver-web:latest
         BUILD_PATH: ./resolver/java
+    - name: Update EKS
+      uses: ./actions/deploy-eks
+      env:
+        CONTAINER_PATH: ./resolver/java
+        CONTAINER_NAME: uni-resolver-web
+        KUBE_CONFIG_DATA: ${{secrets.KUBE_CONFIG_DATA}}
+        AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
+        AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
