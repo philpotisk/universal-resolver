@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - 'drivers/btcr/*'
+      - '*'
 jobs:
   build:
 
@@ -22,7 +22,7 @@ jobs:
         CONTAINER_TAG: phil21/driver-did-btcr:latest
         BUILD_PATH: ./drivers/btcr
     - name: Update EKS
-      uses: ./actions/deploy-eks
+      uses: phil21/github-action-deploy-eks:latest
       env:
         CONTAINER_PATH: ./drivers/btcr
         CONTAINER_NAME: driver-did-btcr

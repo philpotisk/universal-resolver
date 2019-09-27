@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - 'resolver/java/*'
+      - '*'
 
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
         CONTAINER_TAG: phil21/uni-resolver-web:latest
         BUILD_PATH: ./resolver/java
     - name: Update EKS
-      uses: ./actions/deploy-eks
+      uses: phil21/github-action-deploy-eks:latest
       env:
         CONTAINER_PATH: ./resolver/java
         CONTAINER_NAME: uni-resolver-web
