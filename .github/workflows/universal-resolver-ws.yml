@@ -17,5 +17,6 @@ jobs:
       env:
         DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+        DOCKER_FILE: docker/Dockerfile-uni-resolver-web
         CONTAINER_TAG: phil21/uni-resolver-web:latest
         BUILD_PATH: ./resolver/java
