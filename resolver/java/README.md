@@ -1,6 +1,6 @@
 ![DIF Logo](https://raw.githubusercontent.com/decentralized-identity/decentralized-identity.github.io/master/images/logo-small.png)
 
-# Universal Resolver - Java Implementation
+# Universal Resolver - Java Implementation (build #1)
 
 This is a Java implementation of a Universal Resolver. See [universal-resolver](https://github.com/decentralized-identity/universal-resolver/) for a general introduction to Universal Resolvers and drivers.
 
