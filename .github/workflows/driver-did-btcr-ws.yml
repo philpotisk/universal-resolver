@@ -20,7 +20,7 @@ jobs:
         CONTAINER_TAG: phil21/driver-did-btcr:latest
         BUILD_PATH: ./drivers/btcr
     - name: Update EKS
-      uses: phil21/github-action-deploy-eks:latest
+      uses: philpotisk/github-action-deploy-eks@master
       env:
         CONTAINER_PATH: ./drivers/btcr
         CONTAINER_NAME: driver-did-btcr
