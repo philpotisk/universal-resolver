@@ -10,4 +10,4 @@ spec:
     - protocol: TCP
       port: 80 # Kubernetes internal service port
       targetPort: 8080 # Container port
-      nodePort: 30000 # External port exposed
+      nodePort: 30001 # External port exposed
