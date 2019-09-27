@@ -10,7 +10,7 @@ export KUBECONFIG=/tmp/config
 #IS_DEPLOYED=$(kubectl get deployments |grep ${DRIVER_NAME})
 
 echo ${DRIVER_PATH}
-cd ./drivers/btcr
+cd ${DRIVER_PATH}
 
 ls -al
 
