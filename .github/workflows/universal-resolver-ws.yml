@@ -1,15 +1,12 @@
 name: CI/CD Workflow for Universal Resolver Web
-
 on:
-  push, pull_request:
+  push:
     branches:
       - master
-
+  pull_request:
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@master
     - name: Docker Build and Push
