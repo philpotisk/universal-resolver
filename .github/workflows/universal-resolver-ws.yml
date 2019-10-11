@@ -17,3 +17,9 @@ jobs:
         DOCKER_FILE: docker/Dockerfile-uni-resolver-web
         CONTAINER_TAG: phil21/uni-resolver-web:latest
         BUILD_PATH: ./resolver/java
+    - name: Update EKS
+      uses: philpotisk/github-action-maven-sonarcloud@master
+      env:
+        BUILD_PATH: ./resolver/java
+        SONAR_ORG: ${{secrets.SONAR_ORG}}
+        SONAR_LOGIN: ${{secrets.SONAR_LOGIN}}
