@@ -17,7 +17,7 @@ jobs:
         DOCKER_FILE: docker/Dockerfile-uni-resolver-web
         CONTAINER_TAG: phil21/uni-resolver-web:latest
         BUILD_PATH: ./resolver/java
-    - name: Update EKS
+    - name: SonarCloud Analysis
       uses: philpotisk/github-action-maven-sonarcloud@master
       env:
         BUILD_PATH: ./resolver/java

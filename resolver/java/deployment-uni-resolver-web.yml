@@ -1,21 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: uni-resolver-web
+  name: "uni-resolver-web"
+  namespace: "danubetech"
   labels:
-    app: uni-resolver-web
+    app: "uni-resolver-web"
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: uni-resolver-web
+      app: "uni-resolver-web"
   template:
     metadata:
       labels:
-        app: uni-resolver-web
+        app: "uni-resolver-web"
     spec:
       containers:
-      - name: uni-resolver-web
+      - name: "uni-resolver-web"
         image: phil21/uni-resolver-web:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
