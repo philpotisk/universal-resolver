@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: "uni-resolver-web"
+  namespace: "danubetech"
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+  labels:
+    app: "uni-resolver-web"
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /*
+            backend:
+              serviceName: "uni-resolver-web"
+              servicePort: 80
