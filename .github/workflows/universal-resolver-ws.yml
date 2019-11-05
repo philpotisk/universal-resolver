@@ -15,7 +15,7 @@ jobs:
         DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
         DOCKER_FILE: docker/Dockerfile-uni-resolver-web
-        CONTAINER_TAG: phil21/uni-resolver-web:latest
+        CONTAINER_TAG: phil21/uni-resolver-web:3.1.0
         BUILD_PATH: ./resolver/java
     - name: Update EKS
       uses: philpotisk/github-action-deploy-eks@master
