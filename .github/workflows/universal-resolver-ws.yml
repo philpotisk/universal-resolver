@@ -2,7 +2,7 @@ name: CI/CD Workflow for Universal Resolver Web
 on:
   push:
     branches:
-      - master
+      - 3.1.x
   pull_request:
 jobs:
   build:
