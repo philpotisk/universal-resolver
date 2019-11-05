@@ -1,5 +1,7 @@
 ![DIF Logo](https://raw.githubusercontent.com/peacekeeper/universal-resolver/master/docs/logo-dif.png)
 
+[![Build Status]( https://github.com/philpotisk/universal-resolver/workflows/CI/CD%20Workflow%20for%20Universal%20Resolver%20Web/badge.svg)]( https://github.com/philpotisk/universal-resolver/actions?workflow=CI/CD%20Workflow%20for%20Universal%20Resolver%20Web)
+
 # Universal Resolver - TEST 11
 
 A Universal Resolver is an identifier resolver that works with any decentralized identifier system, including Decentralized Identifiers (DIDs).
