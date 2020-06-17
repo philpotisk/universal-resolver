@@ -14,6 +14,7 @@ export KUBECONFIG=/tmp/config
 #kubectl get all --all-namespaces
 
 cp /convert.py /k8s-template.yaml . 2>/dev/null || :
+cp -r /deploy .
 
 python --version
 

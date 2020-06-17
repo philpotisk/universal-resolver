@@ -48,7 +48,7 @@ def generateDeploymentSpecs(containterTags, outputdir):
           print('Writing file: ' + outputdir + '/' + deploymentFile + ' for containter: ' + containterTag)
           for line in fin:
               fout.write(line.replace('{{containerName}}', containerName).replace('{{containterTag}}', containterTag).replace('{{containerPort}}', containerPort))
-          addDeployment(containerName, deploymentFile, outputdir)
+          #addDeployment(containerName, deploymentFile, outputdir)
           fout.close()
         fin.close()
 
